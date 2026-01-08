@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company | Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+ 
+    <link rel="stylesheet" href="css/ex2.css">
+</head>
+<body>
+ 
+<!-- Mobile Header -->
+<div class="mobile-nav d-lg-none d-flex justify-content-between align-items-center p-3 bg-white border-bottom">
+    <h5 class="mb-0 fw-bold text-danger">Company</h5>
+    <button class="btn border-0" id="sidebarToggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+</div>
+ 
+<div class="d-flex">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="bg-white">
+        <div class="sidebar-header p-4 d-none d-lg-block">
+            <h5 class="mb-0 fw-bold">Company</h5>
+        </div>
+        <ul class="nav flex-column px-3">
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-gauge-high"></i> Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-solid fa-chart-line"></i> Analysis</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i> Inbox</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Users</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Maintenance</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-gears"></i> Setting</a></li>
+        </ul>
+    </nav>
+ 
+    <!-- Main Content -->
+    <main class="content-wrapper flex-grow-1 p-4">
+ 
+        <!-- Top Bar -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="search-container d-none d-md-flex align-items-center">
+                <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                <input type="text" class="border-0 bg-transparent" placeholder="Search">
+            </div>
+ 
+            <div class="d-flex align-items-center">
+                <i class="fa-regular fa-bell me-4 fs-5"></i>
+                <div class="d-flex align-items-center border-start ps-3">
+                    <img src="https://i.pravatar.cc/35" class="rounded-circle me-2">
+                    <span class="fw-semibold small">
+                        John Doe <i class="fa-solid fa-chevron-down ms-1" style="font-size:10px"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+ 
+        <h4 class="fw-bold mb-4">Analysis</h4>
+
+
+        <div class="container">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="row">
+              <div class="col-md-8 bg-danger" >.col-md-8</div>
+              <div class="col-3 col-md-4 bg-info">.col-6 .col-md-4</div>
+            </div>
+        </div>
+
+
+        <div class="card border-0 shadow-sm p-4">
+ 
+            <!-- One Column -->
+            <h6 class="fw-bold mb-3">One Column</h6>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="mb-3">
+                <select class="form-select">
+                    <option>Dropdown</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <textarea class="form-control" rows="3" placeholder="Multiple line"></textarea>
+            </div>
+ 
+            <!-- Two Column -->
+            <h6 class="fw-bold mb-3">Two Column</h6>
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Username" value="johndoe">
+                </div>
+                <div class="col-md-6">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select">
+                        <option>Dropdown</option>
+                    </select>
+                </div>
+            </div>
+ 
+            <!-- Three Column -->
+            <h6 class="fw-bold mb-3">Three Column</h6>
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <input type="text" class="form-control is-invalid" placeholder="Focus">
+                </div>
+                <div class="col-md-4">
+                    <input type="password" class="form-control" value="password">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Disabled" disabled>
+                </div>
+            </div>
+ 
+            <!-- Four Column -->
+            <h6 class="fw-bold mb-3">Four Column</h6>
+            <div class="row g-3 mb-4">
+                <div class="col-md-3">
+                    <input type="text" class="form-control is-invalid" placeholder="UI Designer">
+                    <div class="invalid-feedback">Enter valid data</div>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Username" value="johndoe">
+                </div>
+                <div class="col-md-3">
+                    <select class="form-select">
+                        <option>Select</option>
+                    </select>
+                </div>
+            </div>
+ 
+            <!-- Other Elements -->
+            <h6 class="fw-bold mb-3">Other Design Elements</h6>
+ 
+            <div class="mb-3">
+                <label class="form-label fw-semibold">File Upload</label><br>
+                <button class="btn btn-outline-danger btn-sm">
+                    <i class="fa-solid fa-upload me-1"></i> Upload
+                </button>
+                <span class="text-muted ms-2 small">No item selected</span>
+            </div>
+ 
+            <div class="mb-3">
+                <label class="fw-semibold d-block">Radio Button</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio">
+                    <label class="form-check-label">Option 1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" checked>
+                    <label class="form-check-label">Option 2</label>
+                </div>
+            </div>
+ 
+            <div class="mb-4">
+                <label class="fw-semibold d-block">Checkbox</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">Option 1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" checked>
+                    <label class="form-check-label">Option 2</label>
+                </div>
+            </div>
+ 
+            <!-- Alerts -->
+            <div class="alert alert-danger">This is an error message</div>
+            <div class="alert alert-info">This is an information message</div>
+            <div class="alert alert-warning">This is a warning message</div>
+            <div class="alert alert-success">This is a success message</div>
+ 
+            <!-- Buttons -->
+           <div class="row g-2">
+  <div class="col-12 col-sm-auto">
+    <button class="btn btn-danger w-100">Primary</button>
+  </div>
+  <div class="col-12 col-sm-auto">
+    <button class="btn btn-outline-danger w-100">Secondary</button>
+  </div>
+</div>
+            <!-- Tabs -->
+            <ul class="nav nav-tabs mb-2">
+                <li class="nav-item"><a class="nav-link active">Tab 1</a></li>
+                <li class="nav-item"><a class="nav-link">Tab 2</a></li>
+                <li class="nav-item"><a class="nav-link">Tab 3</a></li>
+            </ul>
+ 
+            <p class="text-muted small">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+ 
+        </div>
+    </main>
+</div>
+ 
+<script>
+document.getElementById("sidebarToggle")?.addEventListener("click", () => {
+    document.getElementById("sidebar").classList.toggle("active");
+});
+</script>
+ 
+</body>
+</html>

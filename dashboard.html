@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+ 
+    <div class="mobile-nav d-lg-none d-flex justify-content-between align-items-center p-3 bg-white border-bottom">
+        <img class="logo" src="images/header-logo.svg" >
+        <button class="btn btn-outline-dark border-0" id="sidebarToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+ 
+    <div class="d-flex">
+        <nav id="sidebar" class="bg-white">
+            <div class="sidebar-header p-4 d-none d-lg-block">
+                <img class="logo" src="images/header-logo.svg" >
+            </div>
+            <ul class="nav flex-column p-4 ">
+                <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-solid fa-gauge-high"></i> Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="analysis.html"><i class="fa-solid fa-chart-line"></i> Analysis</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i> Inbox</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><image src="images/user-default.svg" style="height: 20px; margin-right: 13px;"></image><span></span> Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-screwdriver-wrench"></i> Maintenance</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-gears"></i> Setting</a></li>
+            </ul>
+        </nav>
+ 
+        <main class=" flex-grow-1 ">
+            <div class="d-flex justify-content-between align-items-center mb-4 bg-white m-0 h-auto p-3">
+                <div class="search-container d-none d-md-block">
+                    <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                    <input type="text" placeholder="Search" class="border-0 bg-transparent">
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fa-regular fa-bell me-4 fs-5 cursor-pointer"></i>
+                    <div class="d-flex align-items-center border-start ps-3">
+                        <img src="images/profile.png" class="rounded-circle me-2" alt="user">
+                        <span class="fw-semibold small">John Doe <i class="fa-solid fa-chevron-down ms-1" style="font-size: 10px;"></i></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="m-4">
+            <h3 class="fw-bold h4 mb-4">Dashboard</h3>
+ 
+            <div class="row g-3 mb-4">
+                <div class="col-md">
+                    <div class="card stat-card shadow-sm border-0 p-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box me-3"><i class="fa-solid fa-star text-danger"></i></div>
+                            <div><div class="fw-bold fs-5">23,456</div><div class="text-muted x-small">New Products</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card stat-card shadow-sm border-0 p-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box me-3"><i class="fa-solid fa-square-plus text-danger"></i></div>
+                            <div><div class="fw-bold fs-5">2,345</div><div class="text-muted x-small">Added Products</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card stat-card shadow-sm border-0 p-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box me-3"><i class="fa-solid fa-layer-group text-danger"></i></div>
+                            <div><div class="fw-bold fs-5">32,456</div><div class="text-muted x-small">Total Products</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card stat-card shadow-sm border-0 p-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box me-3"><i class="fa-solid fa-circle-dollar-to-slot text-danger"></i></div>
+                            <div><div class="fw-bold fs-5">5,678</div><div class="text-muted x-small">Today's Sale</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card stat-card shadow-sm border-0 p-3">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box me-3"><i class="fa-solid fa-sack-dollar text-danger"></i></div>
+                            <div><div class="fw-bold fs-5">33,5342</div><div class="text-muted x-small">Total Sale</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="row g-4 mb-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <h6 class="fw-bold mb-3">Sale</h6>
+                        <img src="images/data-graph.png" alt="Sales Graph" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <h6 class="fw-bold mb-3">Sales by Country</h6>
+                        <img src="images/pie-chart.svg" alt="Sales by Country" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="card border-0 shadow-sm p-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h6 class="fw-bold mb-0">Invoices</h6>
+                    <a href="#" class="text-danger text-decoration-none x-small fw-bold">View All</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-middle custom-table">
+                        <thead>
+                            <tr>
+                                <th>INVOICE</th>
+                                <th>COMPANY NAME</th>
+                                <th>EMAIL</th>
+                                <th>DUE DATE</th>
+                                <th>STATUS</th>
+                                <th>AMOUNT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>651535</td>
+                                <td class="fw-medium">Public Adjusting Firm</td>
+                                <td>georgia.young@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td><span class="badge-status paid">Paid</span></td>
+                                <td class="fw-bold">$47,800</td>
+                            </tr>
+                            <tr>
+                                <td>558612</td>
+                                <td class="fw-medium">Other</td>
+                                <td>jessica.hanson@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td><span class="badge-status paid">Paid</span></td>
+                                <td class="fw-bold">$98,000</td>
+                            </tr>
+                            <tr>
+                                <td>558612</td>
+                                <td class="fw-medium">Vendor</td>
+                                <td>alma.lawson@example.com</td>
+                                <td>8 Sep, 2020</td>
+                                <td><span class="badge-status paid">Paid</span></td>
+                                <td class="fw-bold">$20,900</td>
+                            </tr>
+                            <tr>
+                                <td>651535</td>
+                                <td class="fw-medium">Subcontractor Company</td>
+                                <td>jackson.graham@example.com</td>
+                                <td>1 Feb, 2020</td>
+                                <td><span class="badge-status failed">Failed</span></td>
+                                <td class="fw-bold">$10,200</td>
+                            </tr>
+                            <tr>
+                                <td>653518</td>
+                                <td class="fw-medium">Mortgage Company</td>
+                                <td>felicia.reid@example.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td><span class="badge-status pending">Pending</span></td>
+                                <td class="fw-bold">$12,600</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+        </main>
+    </div>
+ 
+    <script>
+        document.getElementById('sidebarToggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

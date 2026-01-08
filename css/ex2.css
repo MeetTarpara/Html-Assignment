@@ -1,0 +1,36 @@
+body {
+    background: #f6f7fb;
+    font-family: "Inter", sans-serif;
+}
+ 
+#sidebar {
+    width: 240px;
+    min-height: 100vh;
+    border-right: 1px solid #eee;
+}
+ 
+#sidebar .nav-link {
+    color: #555;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+ 
+#sidebar .nav-link.active,
+#sidebar .nav-link:hover {
+    background: #ffecec;
+    color: #dc3545;
+}
+ 
+.content-wrapper {
+    background: #f6f7fb;
+}
+ 
+.search-container input {
+    outline: none;
+}
+ 
+.alert {
+    border-radius: 6px;
+    font-size: 14px;
+}
