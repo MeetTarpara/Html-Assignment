@@ -62,17 +62,31 @@ body {
  
 
 
-@media (max-width: 991.98px) {
+@media (max-width: 450px) {
     #sidebar {
         position: fixed;
-        left: -240px;
+        left: -100%;
         z-index: 1000;
         height: 100%;
     }
     #sidebar.active {
         left: 0;
+        width: 240px;
     }
 }
+
+@media screen and (min-width: 450px) and (max-width: 991.98px) {
+    #sidebar {
+        position: fixed;
+        left: -100%;
+        z-index: 1000;
+        height: 100%;
+    }
+    #sidebar.active {
+        left: 0;
+        width: 240px;
+    }
+ }
 
 
 .box{
@@ -86,9 +100,11 @@ body {
     border-color: #C8242F;     
   }
   
-.radio-red {
-    accent-color: red;
-  }
+.form-check-input:checked {
+    background-color: #C8242F;
+    border-color: #C8242F;
+}
+
   
 .btn1{
     background-color: #C8242F;
@@ -122,3 +138,18 @@ body {
     }
   }
   
+
+.form-floating>label {
+    position: absolute;
+    top: -18px;
+    left: 2px;
+    height: 100%;
+    /* background-color: transparent; */
+    font-size: 13px;
+    /* padding: 1rem .75rem; */
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+}
+
