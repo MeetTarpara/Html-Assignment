@@ -10,13 +10,34 @@
 </head>
 <body>
  
+    <!-- Sidebar dissappear from lg size -->
     <div class="mobile-nav d-lg-none d-flex justify-content-between align-items-center p-3 bg-white border-bottom">
-        <img class="logo" src="images/header-logo.svg" >
-        <button class="btn btn-outline-light border-0" id="sidebarToggle">
-            <img src="images/menu-bar.svg"  class="me-1">
-        </button>
+        <div class="row">
+            <div class="col-2 me-1">
+                <button class="btn btn-outline-light border-0" id="sidebarToggle">
+                    <img src="images/menu-bar.svg"  class="me-1">
+                </button>
+            </div>
+            <div class="col-9 me-1"> <img class="logo" src="images/header-logo.svg" ></div>
+        </div>
+       
+        
+        
+
+        <div class="search-container d-none d-lg-block">
+            <i class="fa-solid fa-magnifying-glass me-2"></i>
+            <input type="text" placeholder="Search" class="border-0 bg-transparent">
+        </div>
+        <div class="d-flex align-items-center ">
+            <i class="fa-regular fa-bell me-4 fs-5 d-none d-sm-block"></i>
+            <div class="d-flex align-items-center border-start ps-3">
+                <img src="images/profile.png" class="rounded-circle me-2 " alt="user">
+                <span class="fw-semibold small">John Doe <i class="fa-solid fa-chevron-down ms-1" style="font-size: 10px;"></i></span>
+            </div>
+        </div>
     </div>
  
+    <!-- Sidebar visible till lg after it dissapear -->
     <div class=" d-flex">
         <nav id="sidebar" class="bg-white">
             <div class="sidebar-header p-4 d-none d-lg-flex align-items-center">
@@ -35,7 +56,7 @@
         </nav>
  
         <main class=" flex-grow-1 w-100">
-            <div class="d-flex justify-content-between align-items-center mb-4 bg-white m-0 h-auto p-3">
+            <div class="d-flex d-lg-flex d-none justify-content-between align-items-center mb-4 bg-white m-0 h-auto p-3">
                 <div class="search-container d-none d-sm-block">
                     <i class="fa-solid fa-magnifying-glass me-2"></i>
                     <input type="text" placeholder="Search" class="border-0 bg-transparent">
@@ -49,6 +70,8 @@
                 </div>
             </div>
             
+
+            <!-- Main content -->
             <div class="m-4">
             <h3 class="fw-bold h4 mb-4">Dashboard</h3>
  
