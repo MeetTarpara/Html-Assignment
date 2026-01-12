@@ -37,11 +37,11 @@
         <main class=" flex-grow-1 w-100">
             <div class="d-flex justify-content-between align-items-center mb-4 bg-white m-0 h-auto p-3">
                 <div class="search-container d-none d-sm-block">
-                    <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                    <i class="fa-solid fa-magnifying-glass me-2"></i>
                     <input type="text" placeholder="Search" class="border-0 bg-transparent">
                 </div>
                 <div class="d-flex align-items-center ">
-                    <i class="fa-regular fa-bell me-4 fs-5 cursor-pointer"></i>
+                    <i class="fa-regular fa-bell me-4 fs-5"></i>
                     <div class="d-flex align-items-center border-start ps-3">
                         <img src="images/profile.png" class="rounded-circle me-2" alt="user">
                         <span class="fw-semibold small">John Doe <i class="fa-solid fa-chevron-down ms-1" style="font-size: 10px;"></i></span>
@@ -54,15 +54,15 @@
  
             <div class="row g-3 mb-4">
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl">
-                    <div class="card stat-card shadow-sm border-0 p-3 h-100">
+                    <div class="shadow-sm border-0 p-3 h-100 bg-white">
                         <div class="d-flex align-items-center h-100">
                             <div class="icon-box me-3"><i class="fa-solid fa-star text-danger"></i></div>
                             <div><div class="fw-bold fs-5">23,456</div><div class="text-muted x-small">New Products</div></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-4 col-xl">
-                    <div class="card stat-card shadow-sm border-0 p-3 h-100">
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl ">
+                    <div class="bg-white shadow-sm border-0 p-3 h-100">
                         <div class="d-flex align-items-center h-100">
                             <div class="icon-box me-3"><i class="fa-solid fa-square-plus text-danger"></i></div>
                             <div><div class="fw-bold fs-5">2,345</div><div class="text-muted x-small">Added Products</div></div>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl">
-                    <div class="card stat-card shadow-sm border-0 p-3 h-100">
+                    <div class="bg-white shadow-sm border-0 p-3 h-100">
                         <div class="d-flex align-items-center h-100">
                             <div class="icon-box me-3"><i class="fa-solid fa-layer-group text-danger"></i></div>
                             <div><div class="fw-bold fs-5">32,456</div><div class="text-muted x-small">Total Products</div></div>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl">
-                    <div class="card stat-card shadow-sm border-0 p-3 h-100">
+                    <div class="bg-white shadow-sm border-0 p-3 h-100">
                         <div class="d-flex align-items-center h-100">
                             <div class="icon-box me-3"><i class="fa-solid fa-circle-dollar-to-slot text-danger"></i></div>
                             <div><div class="fw-bold fs-5">5,678</div><div class="text-muted x-small">Today's Sale</div></div>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl">
-                    <div class="card stat-card shadow-sm border-0 p-3 h-100">
+                    <div class="bg-white shadow-sm border-0 p-3 h-100">
                         <div class="d-flex align-items-center h-100">
                             <div class="icon-box me-3"><i class="fa-solid fa-sack-dollar text-danger"></i></div>
                             <div><div class="fw-bold fs-5">33,5342</div><div class="text-muted x-small">Total Sale</div></div>
@@ -105,7 +105,35 @@
                 <div class="col-lg-4">
                     <div class="card border-0 shadow-sm p-4 h-100">
                         <h6 class="fw-bold mb-3">Sales by Country</h6>
-                        <img src="images/pie-chart.svg" alt="Sales by Country" class="img-fluid rounded">
+                        <img src="images/pie-chart.svg" alt="Sales by Country" class="img-fluid rounded h-75" >
+                        <div class="row ms-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center ">
+                                    <div class="rounded-circle bg-danger me-2" style="width: 15px; height: 15px;"></div>
+                                    <span>United States of America</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-success me-2" style="width: 15px; height: 15px;"></div>
+                                    <span>Canada</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-1 ms-4 ">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle me-2" style="width: 15px; height: 15px; background-color: orangered;"></div>
+                                    <span>Russia</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-warning me-2" style="width: 15px; height: 15px;"></div>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,7 +144,7 @@
                     <a href="#" class="text-danger text-decoration-none x-small fw-bold">View All</a>
                 </div>
                 <div class="table-responsive">
-                    <table class="table align-middle custom-table">
+                    <table class="table custom-table">
                         <thead>
                             <tr>
                                 <th>INVOICE</th>
@@ -133,7 +161,7 @@
                                 <td class="fw-medium">Public Adjusting Firm</td>
                                 <td>georgia.young@example.com</td>
                                 <td>24 May, 2020</td>
-                                <td><span class="badge-status paid">Paid</span></td>
+                                <td><span class="b-status paid">Paid</span></td>
                                 <td class="fw-bold">$47,800</td>
                             </tr>
                             <tr>
@@ -141,7 +169,7 @@
                                 <td class="fw-medium">Other</td>
                                 <td>jessica.hanson@example.com</td>
                                 <td>24 May, 2020</td>
-                                <td><span class="badge-status paid">Paid</span></td>
+                                <td><span class="b-status paid">Paid</span></td>
                                 <td class="fw-bold">$98,000</td>
                             </tr>
                             <tr>
@@ -149,7 +177,7 @@
                                 <td class="fw-medium">Vendor</td>
                                 <td>alma.lawson@example.com</td>
                                 <td>8 Sep, 2020</td>
-                                <td><span class="badge-status paid">Paid</span></td>
+                                <td><span class="b-status paid">Paid</span></td>
                                 <td class="fw-bold">$20,900</td>
                             </tr>
                             <tr>
@@ -157,7 +185,7 @@
                                 <td class="fw-medium">Subcontractor Company</td>
                                 <td>jackson.graham@example.com</td>
                                 <td>1 Feb, 2020</td>
-                                <td><span class="badge-status failed">Failed</span></td>
+                                <td><span class="b-status failed">Failed</span></td>
                                 <td class="fw-bold">$10,200</td>
                             </tr>
                             <tr>
@@ -165,7 +193,7 @@
                                 <td class="fw-medium">Mortgage Company</td>
                                 <td>felicia.reid@example.com</td>
                                 <td>22 Oct, 2020</td>
-                                <td><span class="badge-status pending">Pending</span></td>
+                                <td><span class="b-status pending">Pending</span></td>
                                 <td class="fw-bold">$12,600</td>
                             </tr>
                         </tbody>

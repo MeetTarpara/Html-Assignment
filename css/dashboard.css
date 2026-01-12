@@ -17,13 +17,8 @@ body {
   transition: all 0.3s;
 }
 
-.sidebar-header h5 {
-  color: #333;
-  font-size: 1.2rem;
-}
-
 .nav-link {
-  color: #6c757d;
+  color: #000000;
   padding: 12px 15px;
   font-weight: 500;
   font-size: 0.9rem;
@@ -45,9 +40,6 @@ body {
 }
 
 
-.stat-card {
-  transition: transform 0.2s;
-}
 
 .icon-box {
   width: 45px;
@@ -61,8 +53,9 @@ body {
 }
 
 
+
 .custom-table thead th {
-  font-size: 10px;
+  font-size: 15px;
   color: #adb5bd;
   font-weight: 700;
   border-bottom: 1px solid #f0f0f0;
@@ -75,16 +68,26 @@ body {
   border-bottom: 1px solid #f8f9fa;
 }
 
-.badge-status {
+.b-status {
   padding: 5px 12px;
   border-radius: 6px;
   font-size: 11px;
   font-weight: 600;
 }
 
-.badge-status.paid { background: #e8fadf; color: #28a745; }
-.badge-status.failed { background: #feecef; color: #dc3545; }
-.badge-status.pending { background: #fef4e6; color: #f39c12; }
+.b-status.paid { 
+  background: #e8fadf; 
+  color: #28a745; 
+}
+
+.b-status.failed { 
+  background: #feecef; 
+  color: #dc3545; 
+}
+.b-status.pending { 
+  background: #fef4e6; 
+  color: #f39c12;
+ }
 
 @media (max-width: 991.98px) {
   #sidebar {
